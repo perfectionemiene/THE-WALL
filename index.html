@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>THE WALL. — Everybody has a story</title>
+  <meta name="description" content="An anonymous corner of the internet. No usernames. No profiles. No followers. Just thoughts.">
+  <meta name="theme-color" content="#011A43">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page-home">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="ambient" aria-hidden="true"><span></span><span></span></div>
+
+  <header class="site-head">
+    <a class="logo" href="index.html">THE WALL<span class="dot">.</span></a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="feed.html">Feed</a></li>
+        <li><a class="nav__post" href="create.html">Post</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__whispers" id="whispers" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="eyebrow">A quiet corner of the internet</p>
+        <h1 class="hero__title" id="hero-title">THE WALL<span class="dot">.</span></h1>
+        <p class="hero__tagline">Everybody has a story, nobody has to know whose <span aria-hidden="true">👀</span></p>
+        <ul class="hero__nos">
+          <li>No usernames.</li>
+          <li>No profiles.</li>
+          <li>No followers.</li>
+          <li class="yes">Just thoughts.</li>
+        </ul>
+        <div class="actions actions--center hero__cta">
+          <a class="btn btn--primary btn--lg" href="feed.html">Enter the feed</a>
+          <a class="btn btn--ghost btn--lg" href="create.html">Post a rant</a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#how">How it works <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="section how" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2 class="section-title" id="how-title">Open. Type. Post. Leave.</h2>
+        <ol class="steps">
+          <li>
+            <span class="steps__num" aria-hidden="true">01</span>
+            <h3>Write</h3>
+            <p>Say whatever is on your mind.</p>
+          </li>
+          <li>
+            <span class="steps__num" aria-hidden="true">02</span>
+            <h3>Post anonymously</h3>
+            <p>No account. No identity attached.</p>
+          </li>
+          <li>
+            <span class="steps__num" aria-hidden="true">03</span>
+            <h3>Let it out</h3>
+            <p>People can react and respond without knowing who you are.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section identity" aria-labelledby="identity-title">
+      <div class="wrap identity__grid">
+        <div>
+          <p class="eyebrow">Every post exists on its own</p>
+          <h2 class="section-title" id="identity-title">The number isn’t you.</h2>
+          <p class="lede">Each thought gets a random number the moment it’s posted. It belongs to that one post. Post again and you get a different one. There is nothing behind it to click, follow or find.</p>
+        </div>
+        <ul class="identity__list" aria-label="Examples of anonymous numbers">
+          <li><span data-anon="4821"></span><span class="identity__arrow" aria-hidden="true">→</span><span class="identity__void">no profile</span></li>
+          <li><span data-anon="7319"></span><span class="identity__arrow" aria-hidden="true">→</span><span class="identity__void">no history</span></li>
+          <li><span data-anon="1048"></span><span class="identity__arrow" aria-hidden="true">→</span><span class="identity__void">no followers</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section sample" aria-labelledby="sample-title">
+      <div class="wrap">
+        <p class="eyebrow">Try one</p>
+        <h2 class="section-title" id="sample-title">Things people don’t say out loud.</h2>
+        <div class="sample__card" id="sample" aria-live="polite"></div>
+        <div class="actions actions--center">
+          <button type="button" class="btn btn--ghost" id="sample-next">Show me another</button>
+          <a class="btn btn--primary" href="feed.html">Read the whole wall</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fine" aria-label="The fine print">
+      <div class="wrap fine__grid">
+        <div id="about">
+          <h2>About</h2>
+          <p>THE WALL is a place to say the thing you can’t say anywhere else. No names, no profiles, no audience to perform for.</p>
+        </div>
+        <div id="guidelines">
+          <h2>Community guidelines</h2>
+          <p>Say anything about your life. Don’t name, target or expose other people. No personal info, handles or contact details. Be kind in the comments.</p>
+        </div>
+        <div id="privacy">
+          <h2>Privacy</h2>
+          <p>This is an early prototype. There is no server: everything you post stays in this browser and nobody else can see it yet.</p>
+        </div>
+        <div id="contact">
+          <h2>Contact</h2>
+          <p>A way to reach the people behind the wall is coming with the real launch.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <nav aria-label="Footer">
+      <ul class="foot-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#guidelines">Community Guidelines</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="foot-note">Prototype. Posts live only in this browser. <button type="button" class="link-btn" data-reset>Reset the wall</button></p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
